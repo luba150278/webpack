@@ -1,0 +1,36 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "1. Створюємо папку src\r 2. Додаємо до src index.html\r 3. Додаємо до src index.js\r 4. Додаємо до src index.css\r 5. Додаємо до src папки img, fonts\r <!-- 6. Створюємо package.json \r    \"type\": module -->\r 7. npm i webpack webpack-cli webpack-dev-server -D\r 8. Налаштовуємо scripts\r \t\"start\": \"webpack serve\",\r     \"build-dev\": \"webpack\",\r     \"build-prod\": \"webpack --node-env=production\",\r     \"clear\": \"rd /s /q dist\"\r 9. Створюємо webpack.config.js\r \tconst path = require('path');",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build-dev": "webpack",
+    "build-prod": "webpack --node-env=production",
+    "clear": "rd /s /q dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-webpack-loader": "^8.1.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "postcss": "^8.4.17",
+    "postcss-loader": "^7.0.1",
+    "postcss-preset-env": "^7.8.2",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
+}
